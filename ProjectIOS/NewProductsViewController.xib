@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SEOptimistLight.otf">
+            <string>SEOptimistLight</string>
+        </array>
+        <array key="junegullrg.ttf">
+            <string>Junegull-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewProductsViewController">
+            <connections>
+                <outlet property="CurrencyTextField" destination="qpR-AD-cT9" id="9io-fo-5Y6"/>
+                <outlet property="DescriptionTextView" destination="1Nc-ba-xfJ" id="1uP-Jq-IRd"/>
+                <outlet property="ProductTextField" destination="fqk-PS-SBr" id="Uc0-YX-nD6"/>
+                <outlet property="SRPTextField" destination="Hd4-MI-bMf" id="5Xk-sL-Xyi"/>
+                <outlet property="UIImageView" destination="obW-Th-ArC" id="2jC-HC-1M4"/>
+                <outlet property="UOMTextField" destination="rey-4t-bpT" id="MIf-8k-n1q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u55-PU-Z5C">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obW-Th-ArC">
+                    <rect key="frame" x="134" y="28" width="146" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbR-Oh-IiV">
+                    <rect key="frame" x="50" y="82" width="314" height="20"/>
+                    <fontDescription key="fontDescription" name="Junegull-Regular" family="Junegull" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fqk-PS-SBr" customClass="DBDarkTextField">
+                    <rect key="frame" x="78" y="164" width="258" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tY4-Tc-Ywp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SEOptimistLight" family="SEOptimistLight" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unit of Measure" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rey-4t-bpT" customClass="DBDarkTextField">
+                    <rect key="frame" x="78" y="210" width="258" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zio-Eh-Rpd"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SEOptimistLight" family="SEOptimistLight" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Currency" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qpR-AD-cT9" customClass="DBDarkTextField">
+                    <rect key="frame" x="78" y="255" width="87" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5MO-50-MLM"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SEOptimistLight" family="SEOptimistLight" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-ba-xfJ">
+                    <rect key="frame" x="78" y="304" width="258" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Oxv-Aw-bSg"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SEOptimistLight" family="SEOptimistLight" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Suggested Price" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-MI-bMf" customClass="DBDarkTextField">
+                    <rect key="frame" x="173" y="255" width="163" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="SEOptimistLight" family="SEOptimistLight" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.64705882349999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1Nc-ba-xfJ" secondAttribute="bottom" constant="304" id="1Pf-Fq-aw1"/>
+                <constraint firstItem="fqk-PS-SBr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="78" id="C17-PI-JqH"/>
+                <constraint firstItem="u55-PU-Z5C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ChH-hW-RV6"/>
+                <constraint firstItem="fqk-PS-SBr" firstAttribute="top" secondItem="obW-Th-ArC" secondAttribute="bottom" constant="8" id="DZ4-Oy-Lix"/>
+                <constraint firstAttribute="trailing" secondItem="obW-Th-ArC" secondAttribute="trailing" constant="134" id="DfS-gD-gaB"/>
+                <constraint firstItem="fqk-PS-SBr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-572" id="GBW-qu-u3u"/>
+                <constraint firstAttribute="bottom" secondItem="u55-PU-Z5C" secondAttribute="bottom" constant="716" id="IMh-EQ-Y0v"/>
+                <constraint firstItem="Hd4-MI-bMf" firstAttribute="leading" secondItem="qpR-AD-cT9" secondAttribute="trailing" constant="7.6699999999999999" id="Jme-Tu-oSk"/>
+                <constraint firstItem="obW-Th-ArC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="134" id="KBo-do-Zgd"/>
+                <constraint firstItem="rey-4t-bpT" firstAttribute="top" secondItem="fqk-PS-SBr" secondAttribute="bottom" constant="16" id="LQf-jb-ZPA"/>
+                <constraint firstAttribute="trailing" secondItem="u55-PU-Z5C" secondAttribute="trailing" id="PBn-vh-5VE"/>
+                <constraint firstItem="obW-Th-ArC" firstAttribute="top" secondItem="u55-PU-Z5C" secondAttribute="bottom" constant="8" id="Sfl-sf-U1z"/>
+                <constraint firstItem="qpR-AD-cT9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="78" id="Uug-vN-Dly"/>
+                <constraint firstItem="Hd4-MI-bMf" firstAttribute="baseline" secondItem="qpR-AD-cT9" secondAttribute="baseline" id="XkP-QH-dq4"/>
+                <constraint firstAttribute="trailing" secondItem="fqk-PS-SBr" secondAttribute="trailing" constant="78" id="ZBf-u9-eKO"/>
+                <constraint firstAttribute="trailing" secondItem="Hd4-MI-bMf" secondAttribute="trailing" constant="78" id="Zrj-ab-ywU"/>
+                <constraint firstItem="CbR-Oh-IiV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="aii-Ra-gij"/>
+                <constraint firstAttribute="trailing" secondItem="CbR-Oh-IiV" secondAttribute="trailing" constant="50" id="dGD-mQ-WDC"/>
+                <constraint firstItem="u55-PU-Z5C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dMa-4t-z27"/>
+                <constraint firstItem="1Nc-ba-xfJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="78" id="dqV-Zv-qEP"/>
+                <constraint firstItem="rey-4t-bpT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="78" id="eCO-1m-kQu"/>
+                <constraint firstItem="CbR-Oh-IiV" firstAttribute="top" secondItem="u55-PU-Z5C" secondAttribute="bottom" constant="62" id="feM-sq-OZo"/>
+                <constraint firstAttribute="trailing" secondItem="rey-4t-bpT" secondAttribute="trailing" constant="78" id="pZV-8t-1QD"/>
+                <constraint firstItem="qpR-AD-cT9" firstAttribute="top" secondItem="rey-4t-bpT" secondAttribute="bottom" constant="15" id="wJo-N8-Pnm"/>
+                <constraint firstAttribute="trailing" secondItem="1Nc-ba-xfJ" secondAttribute="trailing" constant="78" id="yYy-C2-NGn"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="33" y="53"/>
+        </view>
+    </objects>
+</document>
